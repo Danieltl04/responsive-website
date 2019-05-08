@@ -1,0 +1,92 @@
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="res.css">
+</head>
+<body>
+    <div class ="container1">
+        <div class="deel1">
+            <div class="header"><i class="fas fa-bars" onclick= "showLinks('panel1');"></i>
+                <div id="panel1">
+                    <div id="links">
+                        <ul>
+                            <li><i class="fas fa-phone"></i>(06)--- --- --</li> 
+                            <li><i class="fab fa-whatsapp"></i>(06)--- --- --</li> 
+                            <li><i class="far fa-clock"></i>Ma - Zo: 8:00-22:00 </li> 
+                            <li><i class="fas fa-tachometer-alt"></i>dashboard</li> 
+                            <li><i class="fab fa-facebook-square"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter-square"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logo"><i class="fas fa-bars" onclick= "showMenu('panel2');"></i>
+                <img class="logoflexi" alt= "logoflexi" src="images/flexiheader.png">
+                <div id="panel2">
+                    <div id="menu">
+                        <ul>
+                            <li>AUTORIJBEWIJS</li>
+                            <li>MOTORRIJBEWIJS</li>
+                            <li>THEORIELES</li>
+                            <li>OPFRIS CIRCUS</li>
+                            <li>CONTACT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="plaatje"><img alt= "logoflexi" src="images/blijemensenvoormijnwebsite.jpg" width ="100%" ></div>
+        </div>
+
+        <div class="proefles">
+            <h1><i class="fas fa-car-side"></i> PROEFLES </h1>
+            <hr>
+            <p> Weet u het nog niet zeker maar wilt u het toch even proberen bij flexi. Dat kan, want met een vrijblijvende intakeles zit jij nergens aan vast. Jij voelt meteen of er een klik is tussen jou en de rijinstructeur. Is er geen klik, dan zijn er nog andere FLEXi rijinstructeur. Ook bij andere rijinstructeur geldt de vrijblijvende intakeles. Wel zo mooi. </p>
+
+            <button class="btnProefLes"> GRATIS proefles </button>
+        </div>
+
+        <div class="locaties">
+            <h1><i class="fas fa-map"></i> LOCATIES </h1>
+            <hr>
+            <p> Onze rijinstructeurs zijn verspreid over wel bijna heel Nederland. Er is dus bijna altijd wel een rijinstructeur bij jou in de beurt. Is er bij jou in de beurt nog geen FLEXI rijschool. Bel dan even met ons. We kijken dan samen of we toch een FLEXI rijinstructeur voor jou kunnen regelen. klik<span class="blue"> hier </span> de locaties.
+            </p>
+        </div>
+
+        <div class="rijlessen">
+            <h1><i class="fas fa-graduation-cap"></i> RIJLESSEN </h1>
+            <hr>
+            <p> De rijlessen van FLEXi worden op basis van een instructiekaart voorbereid en uitgevoerd. Op de instructiekaart houdt de FLEXi rijinstructeur jouw vorderingen in de gaten. Ook gebruiken de meeste FLEXi rijinsturcteurs een dashcam, zodat de les of een deel van de les teruggekeken wordt. Hier halen jij en jouw FLEXi rijinstructeur de pos en nav en bespreekt dit met jou.
+            </p>
+        </div>
+
+        <iframe width="420" height="315"src=""></iframe>
+        <div class="creator">
+            <p>Daniël 't Lam, 2019</p>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+function showLinks(x){
+    var panel =document.getElementById(x),maxH="130px";
+    if (panel.style.height == maxH) {
+        panel.style.height = "0px";
+    }
+    else{
+        panel.style.height = maxH;
+    }
+}
+function showMenu(x){
+    var panel =document.getElementById(x),maxH="100px";
+    if (panel.style.height == maxH) {
+        panel.style.height = "0px";
+    }
+    else{
+        panel.style.height = maxH;
+    }
+}
+</script>
